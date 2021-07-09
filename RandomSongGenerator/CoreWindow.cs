@@ -10,12 +10,26 @@ using System.Windows.Forms;
 
 namespace RandomSongGenerator
 {
-    public partial class Form1 : Form
+    public partial class CoreWindow : Form
     {
-        public Form1()
+
+
+        public CoreWindow()
         {
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            MIDIHandler.CreateHeaderChunk();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }
